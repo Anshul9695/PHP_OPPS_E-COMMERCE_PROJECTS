@@ -31,6 +31,16 @@ class Database
         }
     }
 
+    public function user_list(){
+        $sql="SELECT * FROM admin_register";
+        $restult=mysqli_query($this->connection,$sql);
+        if($restult->num_rows > 0){
+            return $restult;
+        }else{
+            return false;
+        }
+    }
+
     public function login($email, $password)
     {
 

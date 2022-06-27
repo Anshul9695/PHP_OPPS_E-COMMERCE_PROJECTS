@@ -77,12 +77,6 @@ include 'header.php';
                       }else{
                         array_push($errors, "Fill All fieds");
                       }
-                       
-                      
-
-
-
-
                     }
                     ?>
 

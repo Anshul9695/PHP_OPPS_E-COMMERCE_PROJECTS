@@ -55,7 +55,7 @@
                      
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-copy"></i>Pages
+                                <i class="fas fa-copy"></i>Admin User Manger 
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
@@ -68,6 +68,10 @@
                                 <li>
                                     <a href="register.php">
                                         <i class="fas fa-user"></i>Register</a>
+                                </li>
+                                <li>
+                                    <a href="register_user_list.php">
+                                        <i class="fas fa-user"></i>Register User List</a>
                                 </li>
                                 
                             </ul>
