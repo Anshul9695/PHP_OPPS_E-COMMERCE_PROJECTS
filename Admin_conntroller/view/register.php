@@ -10,6 +10,7 @@ $errors = array();
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
+  
   // receive all input values from the form
   $username = isset($_POST['username'])?$_POST['username']:NULL;
   $email = isset($_POST['email'])?$_POST['email']:NULL;
