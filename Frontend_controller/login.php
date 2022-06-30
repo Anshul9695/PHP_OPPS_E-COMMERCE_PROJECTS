@@ -18,8 +18,9 @@ if (isset($_POST['login_user'])) {
   if (count($errors) == 0) {
     $result = $Database->login($email, $password);
     if ($result) {
-      header("location: dashboard.php");
       $_SESSION['email']=$email;
+      header("location: dashboard.php");
+     
     } else {
       array_push($errors, "Wrong username/password combination");
     }
@@ -33,7 +34,7 @@ if (isset($_POST['login_user'])) {
 
 <head>
   <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../Admin_conntroller/view/assets/css/style.css">
 </head>
 
 <body>

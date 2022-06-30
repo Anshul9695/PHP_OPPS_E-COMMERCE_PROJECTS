@@ -48,6 +48,8 @@ include 'header.php';
                         $products_price = isset($_POST['products_price']) ? $_POST['products_price'] : NULL;
                         $category_id = isset($_POST['category_id']) ? $_POST['category_id'] : NULL;
                         $product_image = isset($_FILES['product_image']) ? $_FILES['product_image'] : NULL;
+                       // var_dump($product_image); 
+                        //die;
 
                         if (empty($product_name)) {
                             array_push($errors, "Fill The Product Name..");
