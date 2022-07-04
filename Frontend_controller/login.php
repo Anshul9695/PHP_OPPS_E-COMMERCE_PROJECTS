@@ -62,9 +62,9 @@ if (isset($_POST['login_user'])) {
     <div class="input-group">
       <button type="submit" class="btn" name="login_user">Login</button>
     </div>
-    <!-- <p>
-      Not yet a member? <a href="register.php">Sign up</a>
-    </p> -->
+    <p>
+       <a href="index.php">Back To Home</a>
+    </p>
   </form>
 </body>
 

@@ -48,7 +48,7 @@ if (isset($_POST['register'])) {
     if (count($errors) == 0) {
         $register_user = $Database->customer_register($first_name, $last_name, $birthday, $gender, $email, $phone, $profile, $password);
         if ($register_user) {
-           header("location: login.php");
+            header("location: login.php");
         } else {
             array_push($errors, "errors To Register user");
         }
@@ -178,7 +178,11 @@ if (isset($_POST['register'])) {
                         <div class="p-t-15">
                             <button class="btn btn--radius-2 btn--blue" type="submit" name="register">Register</button>
                         </div>
+                        <p>
+                            <a href="index.php">Back To Home</a>
+                        </p>
                     </form>
+
                 </div>
             </div>
         </div>
